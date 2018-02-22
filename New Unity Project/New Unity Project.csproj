@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -309,6 +311,17 @@
     <Compile Include="Assets\Game\Scripts\ModeMenuManager.cs" />
     <Compile Include="Assets\Game\Scripts\ShareScreenScript.cs" />
     <Compile Include="Assets\Game\Scripts\TimerBarController.cs" />
+    <Compile Include="Assets\UITest\DependencyInjector.cs" />
+    <Compile Include="Assets\UITest\Examples\FirstScreen.cs" />
+    <Compile Include="Assets\UITest\Examples\MockNetworkClient.cs" />
+    <Compile Include="Assets\UITest\Examples\NetworkClient.cs" />
+    <Compile Include="Assets\UITest\Examples\TestButtonsUI.cs" />
+    <Compile Include="Assets\UITest\Examples\SecondScreen.cs" />
+    <Compile Include="Assets\UITest\Examples\UITestExample.cs" />
+    <Compile Include="Assets\UITest\UITest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\UITest\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
